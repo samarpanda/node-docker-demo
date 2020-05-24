@@ -50,7 +50,9 @@ cd serve-static-files-nginx
 docker build -t static-app .
 
 # run
+# Port exposed to host is 8080. Internal port used is 80. And nginx uses 80 as the default port
 docker run --init --rm -p 8080:80 static-app
+
 
 ```
 
