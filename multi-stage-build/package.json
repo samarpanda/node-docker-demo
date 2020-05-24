@@ -1,0 +1,27 @@
+{
+  "name": "node-docker-demo",
+  "version": "1.0.0",
+  "description": "Containerizing Node.js Applications with Docker",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "prettier": "^2.0.5"
+  },
+  "dependencies": {
+    "@hapi/hapi": "^19.1.1",
+    "hapi-pino": "^8.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samarpanda/node-docker-demo.git"
+  },
+  "author": "er.samarpanda@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/samarpanda/node-docker-demo/issues"
+  },
+  "homepage": "https://github.com/samarpanda/node-docker-demo#readme"
+}

@@ -2,11 +2,15 @@
 
 > Containerizing node.js applications
 
-## Docker build & run
+## Building a nodejs app
+
+> Build a simple nodejs application
 
 Build the node application docker image
 
 ```shell
+cd building-a-nodejs-app
+
 # build
 docker build -t my-node-app .
 
@@ -18,11 +22,13 @@ docker run --init --rm --publish 3000:3000 my-node-app
 
 ```
 
-## Multi-stage build & run
+## Multi stage build
 
-Build the docker image
+> Preparing a multi stage build process
 
 ```shell
+cd multi-stage-build
+
 # build
 docker build -t multi-node -f multi.node.Dockerfile .
 
@@ -33,7 +39,23 @@ docker inspect multi-node
 docker run --init --rm -p 3000:3000 multi-node
 ```
 
-## Explain docker commands
+## Serve static files using nginx
 
-- `--init` with docker run?
-- `--rm` with docker run?
+> Create application using create-react-app and serve static files using nginx
+
+```shell
+cd serve-static-files-nginx
+
+# build
+docker build -t static-app .
+
+# run
+docker run --init --rm -p 8080:80 static-app
+
+```
+
+## Todos?
+
+- Explain below docke run command attributes
+  - docker run `--init`
+  - docker run `--rm`
