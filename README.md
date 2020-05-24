@@ -56,6 +56,6 @@ docker run --init --rm -p 8080:80 static-app
 
 ## Todos?
 
-- Explain below docke run command attributes
+- Explain below docker run command attributes
   - docker run `--init`
   - docker run `--rm`
