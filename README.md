@@ -82,4 +82,4 @@ docker run --mount type=bind,source="$(pwd)"/build,target=/usr/share/nginx/html 
 - `src` or `source` mount source directory i.e `docker run --rm --env DATA_PATH=/data/num.txt --mount type=volume,src=incrementor-data,target=/data incrementor-volume` or `docker run --rm --env DATA_PATH=/data/num.txt --mount type=volume,source=incrementor-data,target=/data incrementor-volume`
 - `--init` Gracefully exits node process where listen is used
 
-Inspired & credits to [@btholt](https://github.com/btholt) for creating & sharing [complete into to containers](https://github.com/btholt/complete-intro-to-containers)
+Inspired & credits to [@btholt](https://github.com/btholt) for creating a course in [FEM](https://frontendmasters.com/courses/complete-intro-containers/) & sharing [complete into to containers](https://github.com/btholt/complete-intro-to-containers)
