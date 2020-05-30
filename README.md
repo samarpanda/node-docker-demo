@@ -81,3 +81,5 @@ docker run --mount type=bind,source="$(pwd)"/build,target=/usr/share/nginx/html 
 - `--rm` Deletes the container after exiting the process. Try running any container with and without this flag to see the difference. For example `docker run --rm --env DATA_PATH=data/num.txt --mount type=bind,source="$(pwd)"/incrementor-data,target=/src/data incrementor-bind` deletes the container after exiting the run process, but `docker run --env DATA_PATH=data/num.txt --mount type=bind,source="$(pwd)"/incrementor-data,target=/src/data incrementor-bind` doesn't deletes the container after exiting the process
 - `src` or `source` mount source directory i.e `docker run --rm --env DATA_PATH=/data/num.txt --mount type=volume,src=incrementor-data,target=/data incrementor-volume` or `docker run --rm --env DATA_PATH=/data/num.txt --mount type=volume,source=incrementor-data,target=/data incrementor-volume`
 - `--init` Gracefully exits node process where listen is used
+
+Inspired & credits to [@btholt](https://github.com/btholt) for creating & sharing [complete into to containers](https://github.com/btholt/complete-intro-to-containers)
