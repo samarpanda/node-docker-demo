@@ -73,7 +73,7 @@ docker run --mount type=bind,source="$(pwd)"/build,target=/usr/share/nginx/html 
 - Build image `docker build --tag=incrementor-volume .`
 - Run container `docker run --rm --env DATA_PATH=/data/num.txt --mount type=volume,src=incrementor-data,target=/data incrementor-volume`
 
-## Explain all docker command attribute used
+## Explain all docker command attributes used
 
 <u>Try all example commands within this directory</u>
 
