@@ -67,11 +67,15 @@ docker run --mount type=bind,source="$(pwd)"/build,target=/usr/share/nginx/html 
   - New image create with the tag name `incrementor-bind`
 - Run container `docker run --rm --env DATA_PATH=data/num.txt --mount type=bind,source="$(pwd)"/incrementor-data,target=/src/data incrementor-bind`
 
+![Bind mount command run down screenshot](https://i.imgur.com/KIHYNIF.png)
+
 <u>Volume mount</u>
 
 - Using bind volumes containers can maintain states between runs.
 - Build image `docker build --tag=incrementor-volume .`
 - Run container `docker run --rm --env DATA_PATH=/data/num.txt --mount type=volume,src=incrementor-data,target=/data incrementor-volume`
+
+![Volume mount command run down screenshot](https://i.imgur.com/TSA3uRf.png)
 
 ## Explain all docker command attributes used
 
